@@ -19,7 +19,7 @@ export const Header = () => {
             <div className="w-20 h-20">
                 <Link to="/"><img src={LOGO_URL} alt="logo" /></Link>
             </div>  
-            <div className="flex items-center">
+            <div className="flex items-center font-serif">
                 <ul className="flex px-10">
                     <li className="px-4 py-6 font-normal text-xl">Online status: {onlineStatus ? <>&#x2713;</>: <>&times;</>}</li>
                     <li className="px-4 py-6 font-normal hover:font-bold text-xl"><Link to="/">Home</Link></li>
