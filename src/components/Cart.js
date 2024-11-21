@@ -12,7 +12,7 @@ const Cart = () => {
         dispatch(clearCart());
     }
     return (
-        <div className="text-center my-6 py-4">
+        <div className="text-center my-6 py-4 font-serif">
             <h1 className="font-bold text-xl">Cart</h1>
             <div className="m-auto w-6/12 ">
                   {

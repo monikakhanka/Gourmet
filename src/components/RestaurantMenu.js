@@ -24,9 +24,9 @@ const RestaurantMenu = () => {
         c?.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory");
     
     return (
-        <div className="menu text-center my-6 p-6 text-xl">
-            <h1 className="font-bold text-lg mb-2">{name}</h1>
-            <p className="text-lg font-semibold my-2">{cuisines.join(", ")} - {costForTwoMessage}</p>
+        <div className="menu text-center font-serif my-6 p-6 text-xl">
+            <h1 className="font-bold text-xl mb-2">{name}</h1>
+            <p className="text-xl font-semibold my-2">{cuisines.join(", ")} - {costForTwoMessage}</p>
       
         {
             categories.map((category, index)=> <RestaurantCategory key={category?.card?.card.title} data={category?.card?.card} 

@@ -7,7 +7,6 @@ import { useSelector } from "react-redux";
 
 
 export const Header = () => {
-    const [btnName, setBtnName] = useState("Login");
     const onlineStatus = useOnlineStatus();
 
     const {loggedInUser} = useContext(UserContext);
@@ -22,18 +21,13 @@ export const Header = () => {
             </div>  
             <div className="flex items-center">
                 <ul className="flex px-10">
-                    <li className="px-4 py-6">Online status: {onlineStatus ? <>&#x2713;</>: <>&times;</>}</li>
-                    <li className="px-4 py-6"><Link to="/">Home</Link></li>
-                    <li className="px-4 py-6"><Link to="/about">About Us</Link></li>
-                    <li className="px-4 py-6"><Link to="/contact">Contact Us</Link></li>
-                    <li className="px-4 py-6"><Link to="/grocery">Grocery</Link></li>
-                    <li className="px-4 py-6 font-bold text-xl"><Link to="/cart">Cart-({cartItems.length} Items)</Link></li>
-                    
-                    <button className="px-4 py-6" onClick={() => {
-                        btnName === "Login" ? setBtnName("logout"): setBtnName("Login");
-                        }
-                    }>{btnName}</button>
-                    <li className="px-4 py-6 font-bold">{loggedInUser}</li>
+                    <li className="px-4 py-6 font-normal text-xl">Online status: {onlineStatus ? <>&#x2713;</>: <>&times;</>}</li>
+                    <li className="px-4 py-6 font-normal hover:font-bold text-xl"><Link to="/">Home</Link></li>
+                    <li className="px-4 py-6 font-normal hover:font-bold text-xl"><Link to="/about">About Us</Link></li>
+                    <li className="px-4 py-6 font-normal hover:font-bold text-xl"><Link to="/contact">Contact Us</Link></li>
+                    <li className="px-4 py-6 font-normal hover:font-bold text-xl"><Link to="/grocery">Grocery</Link></li>
+                    <li className="px-4 py-6 font-normal hover:font-bold text-xl"><Link to="/cart">Cart-({cartItems.length} Items)</Link></li>
+                    <li className="px-4 py-6 font-normal hover:font-bold text-xl">{loggedInUser}</li>
                 </ul>
             </div>
         </div>
