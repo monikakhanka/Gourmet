@@ -28,7 +28,7 @@ import UserContext from "../utils/UserContext";
     
         const onlineStatus = useOnlineStatus();
 
-        if(onlineStatus === false) return <h3>Looks like you're offline!! Please check your internet connection</h3>
+        if(onlineStatus === false) return <h3 className="font-serif font-bold">Looks like you're offline!! Please check your internet connection</h3>
         
         // if true will continue 
 
@@ -53,12 +53,6 @@ import UserContext from "../utils/UserContext";
                         }}>Top Rated Restaurants</button>
                        
                     </div>
-                    <div className="flex items-center">
-                        <label className="ml-7">Username</label>
-                        <input className="border px-3 border-black rounded-md"value={loggedInUser} onChange={(e)=> setUserName(e.target.value) }/>
-                          
-                    </div>
-
                 </div>
 
                 <div className="res-container flex flex-wrap justify-evenly">

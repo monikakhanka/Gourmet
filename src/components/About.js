@@ -29,11 +29,15 @@ class About extends React.Component{
 
     render(){
         const {name, location, avatar_url} = this.state.userInfo;
-        return (<div className="about-us">
-            <h1>About</h1>
-            <h1>Welcome to my About us Page</h1>
-            <UserClass name={name} location={location} avatar_url={avatar_url}/>
-            </div>
+        return (
+            <>
+                <div className="flex justify-center">
+                    <h1 className="text-xl font-bold py-4 text-green-500">Thank you for your time!</h1>
+                </div>    
+                <div className="py-4">
+                    <UserClass name={name} location={location} avatar_url={avatar_url}/>
+                </div>
+            </>
         )
     }
 }
