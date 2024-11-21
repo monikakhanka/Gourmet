@@ -13,7 +13,7 @@ const ItemList = ({items}) =>{
         <div>
             {
                 items.map((item) => (
-                    <div  key={item.card.info.id} data-testid="resItems" className="flex border-b-4  border-gray-400 text-left">
+                    <div  key={item.card.info.id} data-testid="resItems" className="flex font-serif border-b-4  border-gray-400 text-left">
                         <div className="m-4 w-[400px]">
                             <h3 className="font-bold text-xl text-gray-500">{item.card.info.name}</h3>
                             <h3 className="font-bold text-base">₹{item.card.info.price /100}</h3>
