@@ -1,6 +1,6 @@
 const Grocery = () => {
     return (
-        <h1>Our grocery online store, and we have lot of child components</h1>
+        <h1 className="py-10 flex justify-center font-serif text-2xl">Welcome to our grocery store!</h1>
     )
 }
 
