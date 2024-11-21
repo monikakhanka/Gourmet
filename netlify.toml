@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "/api/restaurants"
+  to = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5946784&lng=73.7095365&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+  status = 200
+  force = true
+
+  [[redirects]]
+  from = "/api/menu/:restaurantId"
+  to = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5946784&lng=73.7095365&restaurantId=:restaurantId"
+  status = 200
+  force = true
