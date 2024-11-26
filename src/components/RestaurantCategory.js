@@ -9,7 +9,7 @@ const RestaurantCategory = ({data, showItems, setShowIndex})=>{
     }
     
     return (
-            <div className="w-6/12 my-8 p-5 bg-yellow-100 shadow-2xl m-auto">
+            <div className="w-8/12 my-8 p-5 m-auto">
               <div className="flex justify-between cursor-pointer" onClick={handleClick}  >
                     <span className="font-bold text-lg">{data.title} ({data.itemCards.length})</span>
                     <span className="font-thin">▼</span>

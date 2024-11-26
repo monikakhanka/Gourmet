@@ -13,10 +13,10 @@ const Cart = () => {
     }
     return (
         <div className="text-center my-6 py-4 font-serif">
-            <h1 className="font-bold text-xl">Cart</h1>
+            <h1 className="text-2xl text-green-600 pb-4">Cart</h1>
             <div className="m-auto w-6/12 ">
                   {
-                    cartItems.length === 0 ? <h3 className="text-xl">Your cart is empty. Please add items to the cart</h3> : <button className="p-3 m-4 bg-black text-white rounded-lg" onClick={handleClearCart}>Clear Cart</button>
+                    cartItems.length === 0 ? <h3 className="text-xl font-bold">Your cart is empty. Please add items to the cart</h3> : <button className="p-3 m-4 bg-black text-white rounded-lg" onClick={handleClearCart}>Clear Cart</button>
           
                 }
                 <ItemList items={cartItems}/>  
