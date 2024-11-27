@@ -18,7 +18,7 @@ It is React.js-based application that allows users to browse restaurants, explor
   ![Restaurant Menu Page](gourmetHub-img/restaurantMenu.png)
 
 - Top rated restaurants Page
-  ![Top rated restaurants Page](gourmetHub-img/profile.png)
+  ![Top rated restaurants Page](gourmetHub-img/topRatedRestaurant.png)
 
 - Searched restaurants Page
   ![Searched restaurants Page](gourmetHub-img/searchRestaurants.png)
