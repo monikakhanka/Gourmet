@@ -98,5 +98,5 @@ Steps to use the app:
 
 ## Roadmap
 
-- Checkout form the cart.
+- Checkout from the cart.
 - Adding Payment gateway.
