@@ -9,10 +9,3 @@
   to = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5946784&lng=73.7095365&restaurantId=:restaurantId"
   status = 200
   force = true
-
-
-  [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = true
