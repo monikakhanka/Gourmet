@@ -2,6 +2,9 @@
 
 It is React.js-based application that allows users to browse restaurants, explore menus, and place food orders effortlessly. This app utilizes the Swiggy API to fetch real-time restaurant and menu data.
 
+## Link:
+[Visit Gourmet hub](https://gastro-hub.netlify.app/)
+
 ## Features:
 
 - Browse Restaurants- View a list of restaurants based on location or cuisine.
